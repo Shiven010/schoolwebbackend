@@ -1,0 +1,5 @@
+package com.school.adminservice.config;
+
+public class SecurityConfig {
+
+}

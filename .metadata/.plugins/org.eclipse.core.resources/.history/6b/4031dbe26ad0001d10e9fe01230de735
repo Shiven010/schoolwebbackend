@@ -1,0 +1,5 @@
+package com.school.adminservice.filter;
+
+public class JwtAuthFilter {
+
+}

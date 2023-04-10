@@ -1,0 +1,5 @@
+package com.school.leaveservice.entities;
+
+public class Leave {
+
+}

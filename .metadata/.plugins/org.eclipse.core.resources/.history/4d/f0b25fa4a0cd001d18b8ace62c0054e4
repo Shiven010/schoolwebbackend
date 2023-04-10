@@ -1,0 +1,5 @@
+package com.school.feeservice.repository;
+
+public interface FeeRepository {
+
+}

@@ -1,0 +1,5 @@
+package com.school.studentservice.services;
+
+public class CustomUserDetailService {
+
+}

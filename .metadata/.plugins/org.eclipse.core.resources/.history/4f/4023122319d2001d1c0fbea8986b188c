@@ -1,0 +1,5 @@
+package com.school.studentservice.entity;
+
+public class AuthRequest {
+
+}

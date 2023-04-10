@@ -1,0 +1,5 @@
+package com.school.adminservice.dto;
+
+public class Student {
+
+}

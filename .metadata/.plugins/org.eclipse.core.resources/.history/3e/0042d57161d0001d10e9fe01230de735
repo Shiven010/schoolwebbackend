@@ -1,0 +1,5 @@
+package com.school.adminservice.repositories;
+
+public interface AdminRepositories {
+
+}

@@ -1,0 +1,28 @@
+package com.school.adminservice.services;
+
+import org.springframework.beans.factory.annotation.Autowired;
+import org.springframework.stereotype.Service;
+
+import com.school.adminservice.entity.Admin;
+import com.school.adminservice.repositories.AdminRepository;
+
+@Service
+public class AdminServices {
+	
+	
+	
+	// to add new admin
+	@Autowired
+	AdminRepository adminRepository;
+	
+	public String addAdmin(Admin admin) {
+		
+		adminRepository.save(admin);
+		
+		return "added";
+	
+	}
+	
+	
+
+}

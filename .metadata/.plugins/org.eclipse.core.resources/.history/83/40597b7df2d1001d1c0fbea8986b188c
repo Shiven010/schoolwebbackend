@@ -1,0 +1,29 @@
+package com.school.leaveservice.services;
+
+import org.springframework.beans.factory.annotation.Autowired;
+import org.springframework.stereotype.Service;
+import com.school.leaveservice.entities.Leave;
+import com.school.leaveservice.repositories.LeaveRepository;
+
+@Service
+public class LeaveService {
+	
+	
+	@Autowired
+	LeaveRepository leaveRepository;
+	
+	public Leave addLeave(Leave leave)
+	{
+		leave.setApproved(false);
+		return leaveRepository.save(leave);
+	}
+	
+	public String updated(Leave leave,int id)
+	{
+		Leave leaveUp=leaveRepository.findById(id).orElseThrow(()-> new com.school.leaveservice.exceptions.ResourceNotFoundException("Leave with Id:"+ id +" is not found"));
+		leaveUp.setApproved(leave.getApproved());
+		leaveRepository.save(leaveUp);
+		return "updated";
+	}
+
+}
